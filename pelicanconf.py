@@ -4,11 +4,12 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Ross Donaldson'
 SITENAME = u'Skillet'
-SITEURL = ''
+SITEURL = 'skillet.gastove.com'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
+DEFAULT_DATE_FORMAT = '%a, %b %d %Y'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -28,4 +29,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

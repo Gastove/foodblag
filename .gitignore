@@ -1,5 +1,5 @@
 # Pelican
-output
+output/
 
 #Python
 *.py[cod]
