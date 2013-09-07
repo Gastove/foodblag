@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Ross Donaldson'
 SITENAME = u'Skillet'
-SITEURL = ''
+SITEURL = 'skillet.gastove.com'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 
@@ -15,17 +15,20 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+# Paths
+INPUT_PATH = 'content'
+OUTPUT_PATH = 'output'
+
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS =  (('Home', 'http://www.gastove.com'),
+          ('Pelican', 'http://getpelican.com/'),
+          ('Professional Blog', 'http://blog.gastove.com/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'http://www.twitter.com/Gastove'),
+          ('github', 'http://www.github.com/Gastove'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
