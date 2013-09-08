@@ -12,7 +12,7 @@ SETTINGS_FILE = 'blog_config'
 # Load paths
 ABS_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 ABS_SETTINGS_FILE = os.path.join(ABS_DIR_PATH, SETTINGS_FILE)
-ABS_OUTPUT_PATH = os.path.join(ABS_DIR_PATH, os.path.normpath(OUTPUT_PATH))
+ABS_OUTPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, OUTPUT_PATH))
 ABS_INPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, INPUT_PATH))
 
 
@@ -91,7 +91,7 @@ def _post_path():
     """ Generate the correct post path and make sure it exists  """
     date_string_pieces = strftime("%Y,%m,%d", localtime()).split(",")
     path = "/".join(date_string_pieces)
-    abs_path = os.path.join(ABS_INPUT_PATH, path)
+    abs_path = os.path.join(ABS_INPUT_PATH, 'posts', path)
     if not os.path.exists(abs_path):
         local("mkdir -p %s" % abs_path)
     return abs_path
