@@ -10,6 +10,7 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%a, %b %d %Y'
+MARKUP = ['md', 'markdown']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -17,8 +18,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Paths
-INPUT_PATH = 'content'
-OUTPUT_PATH = 'output'
+INPUT_PATH = '../content'
+OUTPUT_PATH = '../output'
 
 # Blogroll
 LINKS =  (('Home', 'http://www.gastove.com'),
