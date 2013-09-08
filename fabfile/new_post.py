@@ -2,7 +2,7 @@ import os
 from time import localtime, strftime
 import re
 
-from fabric.api import local, lcd, settings
+from fabric.api import local, lcd, settings, task
 from pelicanconf import INPUT_PATH, OUTPUT_PATH
 from fabric.utils import puts
 
@@ -14,12 +14,8 @@ ABS_SETTINGS_FILE = os.path.join(ABS_DIR_PATH, SETTINGS_FILE)
 ABS_OUTPUT_PATH = os.path.join(ABS_DIR_PATH, OUTPUT_PATH)
 ABS_INPUT_PATH = os.path.join(ABS_DIR_PATH, INPUT_PATH)
 
-def test():
-    name = "Three Singing Pigs! Love; Romance"
-    new_post(name)
-
-
-def new_post(name = "", extension = ".md", should_open = True):
+@task(alias="np")
+def generate_new_post(name = "", extension = ".md", should_open = True):
     """ Make a new post """
     if not name:
         puts("Enter a post name:")
