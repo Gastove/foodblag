@@ -4,19 +4,19 @@ from blog_config import INPUT_PATH, OUTPUT_PATH
 import git
 import os
 
-SETTINGS_FILE = 'blog_config'
+SETTINGS_FILE = 'blog_config.py'
 
 # Load paths
 ABS_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 ABS_SETTINGS_FILE = os.path.join(ABS_DIR_PATH, SETTINGS_FILE)
-ABS_OUTPUT_PATH = os.path.join(ABS_DIR_PATH, os.path.normpath(OUTPUT_PATH))
+ABS_OUTPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, OUTPUT_PATH))
 ABS_INPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, INPUT_PATH))
 
 
 @task(alias = "gen")
 def generate(output = ABS_OUTPUT_PATH):
     """ Generate static blog content """
-    cmd = "pelican -s {0} {1}".format(output, ABS_INPUT_PATH)
+    cmd = "pelican -s {0} {1}".format(ABS_SETTINGS_FILE, ABS_INPUT_PATH)
     local(cmd)
 
 
