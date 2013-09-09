@@ -8,6 +8,7 @@ SETTINGS_FILE = 'blog_config.py'
 
 # Load paths
 ABS_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
+ABS_ROOT_DIR = os.path.normpath(os.path.join(ABS_DIR_PATH, '../'))
 ABS_SETTINGS_FILE = os.path.join(ABS_DIR_PATH, SETTINGS_FILE)
 ABS_OUTPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, OUTPUT_PATH))
 ABS_INPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, INPUT_PATH))
@@ -40,7 +41,8 @@ def serve(output = ABS_OUTPUT_PATH):
 @task
 def devserve_start():
     """ Run server; reload if output changes  """
-    cmd = "{}/develop_server.sh".format(ABS_BASE_DIR)
+    cmd = "{}/develop_server.sh".format(ABS_ROOT_DIR)
+    local(cmd)
 
 
 @task
