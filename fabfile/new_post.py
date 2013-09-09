@@ -12,9 +12,10 @@ SETTINGS_FILE = 'blog_config'
 # Load paths
 ABS_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 ABS_SETTINGS_FILE = os.path.join(ABS_DIR_PATH, SETTINGS_FILE)
-ABS_OUTPUT_PATH = os.path.join(ABS_DIR_PATH, os.path.normpath(OUTPUT_PATH))
+# ABS_OUTPUT_PATH = os.path.join(ABS_DIR_PATH, os.path.normpath(OUTPUT_PATH))
 ABS_INPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, INPUT_PATH))
 
+__all__ = ['generate_new_post']
 
 @task(alias="np")
 def generate_new_post(name = "", extension = ".md",
