@@ -38,19 +38,21 @@ def serve(output = ABS_OUTPUT_PATH):
         local("python -m pelican.server")
 
 
-@task
+@task(alias="start")
 def devserve_start():
     """ Run server; reload if output changes  """
-    cmd = "{}/develop_server.sh".format(ABS_ROOT_DIR)
-    local(cmd)
+    alter_devserver("start")
 
 
-@task
+@task(alias="stop")
 def devserve_stop():
     """ Stop the devserver  """
-    local("kill -9 'cat pelican.pid'")
-    local("kill -9 'cat srv.pid'")
-    puts("Dev server stopped")
+    alter_devserver("stop")
+
+
+def alter_devserver(arg):
+    cmd = "{0}/develop_server.sh {1}".format(ABS_ROOT_DIR, arg)
+    local(cmd)
 
 
 @task

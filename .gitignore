@@ -1,7 +1,8 @@
 # Pelican
 output/
+*.pid
 
-#Python
+# Python
 *.py[cod]
 
 # C extensions

@@ -30,6 +30,7 @@ Try this:
 
 ### Ingredients
 *The Stewed Chicken:*
+
 - 1 whole chicken, cut in to pieces.
 - 1 onion
 - 2 teaspoons sage
@@ -38,8 +39,10 @@ Try this:
 - 1 bay leaf
 - 1/4 cup white flour
 - oil or fat for low-temperature frying
+
 *The Dumplings:*
-- 2 cups white flour
+
+z- 2 cups white flour
 - 4 teaspoons baking powder
 - 1 teaspoon salt
 - 1/4 cup parsley
