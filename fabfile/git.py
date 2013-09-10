@@ -2,7 +2,7 @@
 # The deploy branch contains generated content; the generated
 # content should be committed to a branch, then pushed to github.
 
-from fabric.api import local
+from fabric.api import local, puts, settings
 from time import strftime, localtime
 
 SOURCE_BRANCH = "master"
@@ -19,7 +19,13 @@ def commit_all(msg = None):
         timestamp = strftime("%Y-%m-%d %H:%I:%S", localtime())
         msg = "Published Blog at {0}".format(timestamp)
     cmd = "git commit -a -m {0!r}".format(msg)
-    local(cmd)
+    with settings(warn_only=True):
+        result = local(cmd)
+    if result.failed:
+        puts("Nothing to commit")
+        return False
+    else:
+        return True
 
 
 def merge(merge_target):

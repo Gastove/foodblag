@@ -67,6 +67,7 @@ def publish(output = ABS_OUTPUT_PATH):
     git.change_branch(live)
     git.merge(src)
     generate('./')
-    git.commit_all()
-    git.push(live)
+    com_stat = git.commit_all()
+    if com_stat:
+        git.push(live)
     git.change_branch(src)
