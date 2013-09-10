@@ -20,7 +20,7 @@ There are so few ways this can go wrong. Here are all of them:
 2. Use crappy chicken stock. Seriously, if you don't have your own on hand (I frequently don't), get a jar of Better than Bouillon.
 3. Cook it too long.
 
-...that's it. The dumpling ingredients are less flexible than those of the stewed chicken, but you can swap parsley for about any other fresh herb you like (sage is very good), or you can omit it entirely. You can use more onion, add garlic, leave out the alia all together, more vinegar or less, bay or no bay. I grew up eating dumplings made with vegetable shortening; I prefer making them with lard or schmaltz. It's remarkably easy going.
+...that's it. The dumpling ingredients are less flexible than those of the stewed chicken, but you can swap parsley for about any other fresh herb you like (sage is very good), or you can omit it entirely. You can use more onion, add garlic, leave both out all together, more vinegar or less, bay or no bay. I grew up eating dumplings made with vegetable shortening; I prefer making them with lard or schmaltz. It's remarkably easy going.
 
 I spent the weekend sick with stomach things and today I craved Real Food -- something I could eat and feel better, something easy to digest. I did the worst job I could making chicken and dumplings. I forgot the onion entirely; my chicken was frozen solid; I put the pieced chicken in with the whole frozen chicken so it all cooked at different speeds. But I didn't do any of the three mistakes above, and you know what?
 
@@ -38,11 +38,11 @@ Try this:
 - 6 cups chicken stock
 - 1 bay leaf
 - 1/4 cup white flour
-- oil or fat for low-temperature frying
+- Oil or fat for low-temperature frying
 
 *The Dumplings:*
 
-z- 2 cups white flour
+- 2 cups white flour
 - 4 teaspoons baking powder
 - 1 teaspoon salt
 - 1/4 cup parsley
