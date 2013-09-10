@@ -16,7 +16,7 @@ def change_branch(branch):
 def commit_all(msg = None):
     """ Commit generated content to branch """
     if not msg:
-        timestamp = strftime("%Y-%m-%d %H:%I:$S", localtime())
+        timestamp = strftime("%Y-%m-%d %H:%I:%S", localtime())
         msg = "Published Blog at {0}".format(timestamp)
     cmd = "git commit -a -m {0}".format(msg)
     local(cmd)
