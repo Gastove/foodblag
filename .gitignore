@@ -20,7 +20,7 @@ var
 sdist
 develop-eggs
 .installed.cfg
-lib
+lib/python2.7
 lib64
 
 # Installer logs
