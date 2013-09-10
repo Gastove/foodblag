@@ -43,13 +43,13 @@ def serve(output = ABS_OUTPUT_PATH):
 
 
 @task(alias="start")
-def devserve_start():
+def devserver_start():
     """ Run server; reload if output changes  """
     alter_devserver("start")
 
 
 @task(alias="stop")
-def devserve_stop():
+def devserver_stop():
     """ Stop the devserver  """
     alter_devserver("stop")
 

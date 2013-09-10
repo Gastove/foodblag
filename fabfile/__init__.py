@@ -7,7 +7,7 @@ __all__ = [
     'generate',
     'clean',
     'server',
-    'devserve_start',
-    'devserve_stop',
+    'devserver_start',
+    'devserver_stop',
     'publish'
 ]
