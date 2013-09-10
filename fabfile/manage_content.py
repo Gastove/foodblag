@@ -62,9 +62,11 @@ def alter_devserver(arg):
 @task
 def publish(output = ABS_OUTPUT_PATH):
     """ Publishes the current master branch to GH Pages """
-    git.change_branch(git.DEPLOY_BRANCH)
-    git.merge(git.SOURCE_BRANCH)
+    src = git.SOURCE_BRANCH
+    live = git.DEPLOY_BRANCH
+    git.change_branch(live)
+    git.merge(src)
     generate('./')
     git.commit_all()
-    git.push()
-    git.change_branch(git.SOURCE_BRANCH)
+    git.push(live)
+    git.change_branch(src)
