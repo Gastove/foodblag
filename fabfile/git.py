@@ -8,9 +8,9 @@ from time import strftime, localtime
 SOURCE_BRANCH = "master"
 DEPLOY_BRANCH = "gh-pages"
 
-def change_branch(branch = "gh-pages"):
+def change_branch(branch):
     """ Switch to specified Branch """
-    local("git branch {}".format(branch))
+    local("git checkout {}".format(branch))
 
 
 def commit_all(msg = None):
@@ -22,11 +22,11 @@ def commit_all(msg = None):
     local(cmd)
 
 
-def merge(merge_target = SOURCE_BRANCH):
+def merge(merge_target):
     """ Merge target branch into current """
     local("git merge {0}".format(merge_target))
 
 
-def push(target = DEPLOY_BRANCH):
+def push(target):
     """ Push the generated content to the specified target """
     local("git push origin {0}".format(target))

@@ -61,10 +61,10 @@ def alter_devserver(arg):
 
 @task
 def publish(output = ABS_OUTPUT_PATH):
-    """ Erghm. Publishing. Generate, commit, push to git """
+    """ Publishes the current master branch to GH Pages """
     git.change_branch(git.DEPLOY_BRANCH)
-    git.merge()
-    generate('deploy/')
+    git.merge(git.SOURCE_BRANCH)
+    generate('./')
     git.commit_all()
     git.push()
     git.change_branch(git.SOURCE_BRANCH)
