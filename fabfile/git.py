@@ -17,14 +17,14 @@ def commit_all(msg = None):
     """ Commit generated content to branch """
     if not msg:
         timestamp = strftime("%Y-%m-%d %H:%I:%S", localtime())
-        msg = "Published Blog at {0!r}".format(timestamp)
-    cmd = "git commit -a -m {0}".format(msg)
+        msg = "Published Blog at {0}".format(timestamp)
+    cmd = "git commit -a -m {0!r}".format(msg)
     local(cmd)
 
 
 def merge(merge_target):
     """ Merge target branch into current """
-    local("git merge {0}".format(merge_target))
+    local("git merge --no-edit {0}".format(merge_target))
 
 
 def push(target):
