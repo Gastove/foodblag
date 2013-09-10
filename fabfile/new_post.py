@@ -73,7 +73,8 @@ def _write_default_metadata(post_real_name, post_full_path):
         "Tags": "",
         "Slug": os.path.basename(post_full_path[:-3]),
         "Author": "",
-        "Summary": ""
+        "Summary": "",
+        "status": "draft"
     }
     for key in metadata_keys:
         metadata_defaults[key] = load_config_or_else(key, metadata_defaults[key])

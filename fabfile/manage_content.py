@@ -15,9 +15,13 @@ ABS_INPUT_PATH = os.path.normpath(os.path.join(ABS_DIR_PATH, INPUT_PATH))
 
 
 @task(alias = "gen")
-def generate(output = ABS_OUTPUT_PATH):
+def generate(output = None):
     """ Generate static blog content """
-    cmd = "pelican -s {0} {1}".format(ABS_SETTINGS_FILE, ABS_INPUT_PATH)
+    if output:
+        cmd = "pelican -s {0} -o {1} {2}".format(ABS_SETTINGS_FILE,
+                                                 output, ABS_INPUT_PATH)
+    else:
+        cmd = "pelican -s {0} {1}".format(ABS_SETTINGS_FILE, ABS_INPUT_PATH)
     local(cmd)
 
 
@@ -60,7 +64,7 @@ def publish(output = ABS_OUTPUT_PATH):
     """ Erghm. Publishing. Generate, commit, push to git """
     git.change_branch(git.DEPLOY_BRANCH)
     git.merge()
-    generate()
+    generate('deploy/')
     git.commit_all()
     git.push()
     git.change_branch(git.SOURCE_BRANCH)
