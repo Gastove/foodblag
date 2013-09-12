@@ -18,7 +18,7 @@ def commit_all(msg = None):
     if not msg:
         timestamp = strftime("%Y-%m-%d %H:%I:%S", localtime())
         msg = "Published Blog at {0}".format(timestamp)
-    cmd = "git commit -a -m {0!r}".format(msg)
+    cmd = "git add . && git commit -a -m {0!r}".format(msg)
     with settings(warn_only=True):
         result = local(cmd)
     if result.failed:
