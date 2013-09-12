@@ -12,7 +12,7 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%a, %b %d %Y'
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 MARKUP = ('md', 'markdown')
 
 # Feed generation is usually not desired when developing
