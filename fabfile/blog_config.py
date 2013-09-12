@@ -12,7 +12,8 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%a, %b %d %Y'
-# MARKUP = ('md', 'markdown')
+DEFAULT_PAGINATION = 10
+MARKUP = ('md', 'markdown')
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -32,7 +33,8 @@ LINKS =  (('Home', 'http://www.gastove.com'),
 SOCIAL = (('twitter', 'http://www.twitter.com/Gastove'),
           ('github', 'http://www.github.com/Gastove'),)
 
-DEFAULT_PAGINATION = 10
+TWITTER_USERNAME = 'gastove'
+GOOGLE_ANALYTICS = 'UA-43979937-1'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
