@@ -6,7 +6,7 @@ AUTHOR = u'Ross Donaldson'
 SITENAME = u'Skillet'
 SITEURL = 'skillet.gastove.com'
 
-THEME = '/Users/ross/code/personal_projects/foodblag/lib/theme/built-text'
+THEME = '../lib/theme/built-text'
 
 TIMEZONE = 'US/Pacific'
 
