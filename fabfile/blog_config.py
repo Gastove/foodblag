@@ -34,7 +34,10 @@ SOCIAL = (('twitter', 'http://www.twitter.com/Gastove'),
           ('github', 'http://www.github.com/Gastove'),)
 
 TWITTER_USERNAME = 'gastove'
+
+# Handy Dandy Third Parties
 GOOGLE_ANALYTICS = 'UA-43979937-1'
+DISQUS_SITENAME = 'skillet'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
