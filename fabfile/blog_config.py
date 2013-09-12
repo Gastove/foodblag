@@ -12,7 +12,7 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%a, %b %d %Y'
-MARKUP = ('md', 'markdown')
+# MARKUP = ('md', 'markdown')
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
