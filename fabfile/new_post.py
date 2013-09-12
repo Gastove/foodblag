@@ -64,7 +64,7 @@ def _write_default_metadata(post_real_name, post_full_path):
             return default
 
     metadata_keys = [
-        "Title", "Author", "Date", "Slug", "Category", "Tags", "Summary"
+        "Title", "Author", "Date", "Slug", "Category", "Tags", "Summary", "status"
     ]
     metadata_defaults = {
         "Title": post_real_name,
