@@ -4,7 +4,7 @@ output/
 
 # Python
 *.py[cod]
-bin/
+.Python
 
 # C extensions
 *.so
@@ -16,7 +16,8 @@ dist
 build
 eggs
 parts
-bin
+bin/
+include/
 var
 sdist
 develop-eggs
