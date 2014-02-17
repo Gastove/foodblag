@@ -4,6 +4,7 @@ output/
 
 # Python
 *.py[cod]
+.Python
 
 # C extensions
 *.so
@@ -15,12 +16,13 @@ dist
 build
 eggs
 parts
-bin
+bin/
+include/
 var
 sdist
 develop-eggs
 .installed.cfg
-lib/python2.7
+lib/python2.7/
 lib64
 
 # Installer logs
