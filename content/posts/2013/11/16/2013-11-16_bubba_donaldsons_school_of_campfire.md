@@ -1,6 +1,6 @@
 Title: Bubba Donaldson's School of Campfire Cookin'
 Author: Ross Donaldson
-Date: 2014-11-16
+Date: 2014-02-16
 Slug: 2014-02-16_bubba_donaldsons_school_of_campfire
 Category: Thinkery
 Tags: Thoughts, Food, Father, Love
