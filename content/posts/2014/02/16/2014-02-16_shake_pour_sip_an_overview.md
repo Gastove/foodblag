@@ -39,6 +39,7 @@ Suggestion: measure with [one of these](http://www.oxo.com/p-510-mini-angled-mea
 ...that's it. You're done. Well, okay -- there are a few edge cases, like the Brandy Alexander, where you **must** shake to give the drink the texture that makes it special (ditto anything with egg whites). But all of the edge cases pass the first and most important test: is it clear? In practice, "clear" means "contains neither fruit juice nor milk nor eggs." Martini? Stir that -- you'll get a crystalline drink to present in your best stemware. Mai Tai? Shake it like... like...
 
 Well shake it like this:
+
 1. Measure your ingredients in to a pint glass.
 2. Dump a bunch of ice in to your Boston Shaker (the metal cup you always see bartenders use).
 3. Pour the liquid in to the metal cup, then put the pint glass in to the shaker to form a complete vessel.
@@ -48,6 +49,7 @@ Well shake it like this:
 7. To open: place the shaker down on the counter, metal half down. Place one hand along the side of the canister and hold it firmly. With your other hand, smack the outisde of the metal shaker at about the place the pint glass is stuck in to it. If you do this right, you should hear the sucking sound of a vacuum being released, and the top of the shaker should come off easily.
 
 Stirring is considerably easier and more peaceful:
+
 1. Put ice in a pint glass
 2. Measure your ingredients over the ice
 3. Stir with a bar spoon until everything is really cold.
@@ -58,6 +60,7 @@ Stirring is considerably easier and more peaceful:
 This is gonna sound silly, but here it is: when I get a cocktail in a bar, and I take a sip of it, the first thing that hits me is how well strained it was -- _especially_ if the drink was a) shaken and b) served up. Shaking generates tiny chips of ice, and there simply isn't a Hawthorne strainer on this Earth that will remove them. Instead, an incautiously strained drink will have a layer of ice flakes that float on top of the drink, bump against your lips as you sip, spoil the texture of the cocktail, and slowly dilute it too far.
 
 Avoiding this problem is ridiculously simple:
+
 1. Did you stir your drink? Strain by placing a Julep Spoon down in to the pint glass. Done.
 2. Was the drink shaken? Place a Hawthorne strainer on top of your shaker. Now, pour the drink through a small, fine sieve. If the drink is thick -- an Alexander or a Sour, for instance -- you can speed the drinks passage through the strainer by tapping the strainer with the end of the shaker.
 
